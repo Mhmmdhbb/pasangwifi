@@ -26,6 +26,21 @@
         text-align: center;
         border-bottom: 4px solid var(--red-indihome);
       }
+      /* Pengganti Logo Gambar ke Teks */
+      .brand-name {
+        font-size: 28px;
+        font-weight: bold;
+        color: var(--red-indihome);
+        margin: 0;
+        letter-spacing: -1px;
+      }
+
+      .brand-sub {
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+        font-weight: normal;
+      }
 
       .container {
         max-width: 900px;
@@ -136,12 +151,11 @@
   </head>
   <body>
     <header>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/a/af/IndiHome_by_Telkomsel_logo.svg"
-        alt="IndiHome Logo"
-        width="200"
-      />
-      <p>Wilayah: Sumatra, Kalimantan, Sulawesi (RDC A)</p>
+      <h1 class="brand-name">IndiHome</h1>
+      <div class="brand-sub">by Telkomsel</div>
+      <p style="margin-top: 15px; font-weight: bold; color: #444">
+        Wilayah: Sumatra, Kalimantan, Sulawesi (RDC A)
+      </p>
     </header>
 
     <div class="container">
@@ -361,4 +375,3 @@
     </script>
   </body>
 </html>
-
