@@ -22,9 +22,25 @@
 
       header {
         background-color: white;
-        padding: 20px;
+        padding: 25px 20px;
         text-align: center;
         border-bottom: 4px solid var(--red-indihome);
+      }
+
+      /* Pengganti Logo Gambar ke Teks */
+      .brand-name {
+        font-size: 28px;
+        font-weight: bold;
+        color: var(--red-indihome);
+        margin: 0;
+        letter-spacing: -1px;
+      }
+
+      .brand-sub {
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+        font-weight: normal;
       }
 
       .container {
@@ -131,17 +147,19 @@
           font-size: 12px;
           padding: 5px;
         }
+        .brand-name {
+          font-size: 24px;
+        }
       }
     </style>
   </head>
   <body>
     <header>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/a/af/IndiHome_by_Telkomsel_logo.svg"
-        alt="IndiHome Logo"
-        width="200"
-      />
-      <p>Wilayah: Jawa, Bali, Nusa Tenggara (RDC A)</p>
+      <h1 class="brand-name">IndiHome</h1>
+      <div class="brand-sub">by Telkomsel</div>
+      <p style="margin-top: 15px; font-weight: bold; color: #444">
+        Wilayah: Jawa, Bali, Nusa Tenggara (RDC A)
+      </p>
     </header>
 
     <div class="container">
@@ -338,12 +356,12 @@
 
     <script>
       function sendToWhatsapp() {
-        const adminNumber = "6285183281157"; // GANTI DENGAN NOMOR WHATSAPP ANDA (Gunakan kode negara 62)
+        const adminNumber = "6285183281157";
 
         const nama = document.getElementById("nama").value;
         const alamat = document.getElementById("alamat").value;
         const whatsapp = document.getElementById("whatsapp").value;
-        const alternatif = document.getElementById("alternatif").value;
+        const alternatif = document.getElementById("alternatif").value || "-";
         const email = document.getElementById("email").value;
         const paket = document.getElementById("paket").value;
 
