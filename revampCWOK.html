@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran IndiHome by Telkomsel</title>
+    <style>
+      :root {
+        --red-indihome: #ee2d24;
+        --blue-light: #e0f7fa;
+        --green-light: #e8f5e9;
+        --yellow-light: #fff9c4;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px solid var(--red-indihome);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: var(--red-indihome);
+        text-align: center;
+      }
+
+      .table-container {
+        overflow-x: auto;
+        margin-bottom: 30px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      th {
+        background-color: black;
+        color: white;
+        padding: 12px;
+      }
+
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+        font-size: 14px;
+      }
+
+      .bg-yellow {
+        background-color: var(--yellow-light);
+      }
+      .bg-green {
+        background-color: var(--green-light);
+      }
+      .bg-blue {
+        background-color: var(--blue-light);
+      }
+
+      form {
+        display: grid;
+        gap: 15px;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .btn-submit {
+        background-color: #25d366;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .btn-submit:hover {
+        background-color: #128c7e;
+      }
+
+      .note {
+        font-size: 12px;
+        color: #666;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 600px) {
+        td,
+        th {
+          font-size: 12px;
+          padding: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/a/af/IndiHome_by_Telkomsel_logo.svg"
+        alt="IndiHome Logo"
+        width="200"
+      />
+      <p>Wilayah: Jawa, Bali, Nusa Tenggara (RDC C)</p>
+    </header>
+
+    <div class="container">
+      <h2>Daftar Paket IndiHome</h2>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Paket</th>
+              <th>Biaya Pasang</th>
+              <th>Harga Paket</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-yellow">
+              <td>One Dynamic 20 Mbps + Kuota 30 GB</td>
+              <td rowspan="5">Rp 166.500</td>
+              <td>Rp 220.000</td>
+            </tr>
+            <tr class="bg-yellow">
+              <td>One Dynamic 50 Mbps + Kuota 15 GB</td>
+              <td>Rp 310.000</td>
+            </tr>
+            <tr class="bg-yellow">
+              <td>One Dynamic 75 Mbps + Kuota 15 GB</td>
+              <td>Rp 325.000</td>
+            </tr>
+            <tr class="bg-yellow">
+              <td>One Dynamic 100 Mbps + Kuota 15 GB</td>
+              <td>Rp 360.000</td>
+            </tr>
+            <tr class="bg-yellow">
+              <td>One Dynamic 150 Mbps + Kuota 15 GB</td>
+              <td>Rp 405.000</td>
+            </tr>
+
+            <tr class="bg-green">
+              <td>Indihome Revamp 50 Mbps</td>
+              <td rowspan="4">Rp 166.500 + Tagihan Bln 1</td>
+              <td>Rp 270.000</td>
+            </tr>
+            <tr class="bg-green">
+              <td>Indihome Revamp 75 Mbps</td>
+              <td>Rp 290.000</td>
+            </tr>
+            <tr class="bg-green">
+              <td>Indihome Revamp 150 Mbps</td>
+              <td>Rp 375.000</td>
+            </tr>
+            <tr class="bg-green">
+              <td>Indihome Revamp 200 Mbps</td>
+              <td>Rp 540.000</td>
+            </tr>
+
+            <tr class="bg-blue">
+              <td>Indihome Revamp 50 Mbps + TV</td>
+              <td rowspan="4">Rp 166.500 + Tagihan Bln 1</td>
+              <td>Rp 385.000</td>
+            </tr>
+            <tr class="bg-blue">
+              <td>Indihome Revamp 75 Mbps + TV</td>
+              <td>Rp 405.000</td>
+            </tr>
+            <tr class="bg-blue">
+              <td>Indihome Revamp 150 Mbps + TV</td>
+              <td>Rp 510.000</td>
+            </tr>
+            <tr class="bg-blue">
+              <td>Indihome Revamp 200 Mbps + TV</td>
+              <td>Rp 675.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note">
+        <ul>
+          <li>Bonus OTT Amazon Prime Video (Paket 50 Mbps ke atas)</li>
+          <li>Biaya Belum Termasuk PPN 11%</li>
+          <li>Biaya Pasang Dibayarkan Setelah WiFi Terpasang</li>
+          <li>Sistem Pembayaran Pascabayar</li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h2>Formulir Pendaftaran</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label>Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Sesuai KTP" required />
+        </div>
+
+        <div class="form-group">
+          <label>Alamat Pemasangan</label>
+          <textarea
+            id="alamat"
+            rows="3"
+            placeholder="Alamat lengkap, No Rumah, RT/RW, Kel/Kec"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>No. HP / WhatsApp Aktif</label>
+          <input
+            type="tel"
+            id="whatsapp"
+            placeholder="08123xxx"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>No. HP Alternatif</label>
+          <input
+            type="tel"
+            id="alternatif"
+            placeholder="08123xxx"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Alamat Email Aktif</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="contoh@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Pilih Paket</label>
+          <select id="paket" required>
+            <option value="">-- Pilih Paket --</option>
+            <optgroup label="One Dynamic">
+              <option value="One Dynamic 20 Mbps">
+                One Dynamic 20 Mbps - Rp 220rb
+              </option>
+              <option value="One Dynamic 50 Mbps">
+                One Dynamic 50 Mbps - Rp 310rb
+              </option>
+              <option value="One Dynamic 75 Mbps">
+                One Dynamic 75 Mbps - Rp 325rb
+              </option>
+              <option value="One Dynamic 100 Mbps">
+                One Dynamic 100 Mbps - Rp 360rb
+              </option>
+              <option value="One Dynamic 150 Mbps">
+                One Dynamic 150 Mbps - Rp 405rb
+              </option>
+            </optgroup>
+            <optgroup label="Indihome Revamp (Internet Only)">
+              <option value="Revamp 50 Mbps">Revamp 50 Mbps - Rp 270rb</option>
+              <option value="Revamp 75 Mbps">Revamp 75 Mbps - Rp 290rb</option>
+              <option value="Revamp 150 Mbps">
+                Revamp 150 Mbps - Rp 375rb
+              </option>
+              <option value="Revamp 200 Mbps">
+                Revamp 200 Mbps - Rp 540rb
+              </option>
+            </optgroup>
+            <optgroup label="Indihome Revamp + TV">
+              <option value="Revamp 50 Mbps + TV">
+                Revamp 50 Mbps + TV - Rp 385rb
+              </option>
+              <option value="Revamp 75 Mbps + TV">
+                Revamp 75 Mbps + TV - Rp 405rb
+              </option>
+              <option value="Revamp 150 Mbps + TV">
+                Revamp 150 Mbps + TV - Rp 510rb
+              </option>
+              <option value="Revamp 200 Mbps + TV">
+                Revamp 200 Mbps + TV - Rp 675rb
+              </option>
+            </optgroup>
+          </select>
+        </div>
+
+        <p style="color: red; font-size: 12px">
+          *Siapkan Foto KTP dan Foto Rumah Tampak Depan untuk dikirim setelah
+          chat terbuka.
+        </p>
+
+        <button type="button" class="btn-submit" onclick="sendToWhatsapp()">
+          Kirim Pendaftaran via WhatsApp
+        </button>
+      </form>
+    </div>
+
+    <script>
+      function sendToWhatsapp() {
+        const adminNumber = "6285183281157";
+
+        const nama = document.getElementById("nama").value;
+        const alamat = document.getElementById("alamat").value;
+        const whatsapp = document.getElementById("whatsapp").value;
+        const alternatif = document.getElementById("alternatif").value;
+        const email = document.getElementById("email").value;
+        const paket = document.getElementById("paket").value;
+
+        if (!nama || !alamat || !whatsapp || !email || !paket) {
+          alert("Harap lengkapi semua data formulir!");
+          return;
+        }
+
+        const message =
+          `Halo Admin IndiHome, saya ingin mendaftar:%0A%0A` +
+          `1. Nama: ${nama}%0A` +
+          `2. Alamat Pemasangan: ${alamat}%0A` +
+          `3. No HP WA Aktif: ${whatsapp}%0A` +
+          `4. No HP Alternatif: ${alternatif || "-"}%0A` +
+          `5. Email: ${email}%0A` +
+          `6. Paket Terpilih: ${paket}%0A%0A` +
+          `Berikut saya lampirkan foto KTP dan foto rumah (akan saya kirimkan setelah ini).`;
+
+        const url = `https://wa.me/${adminNumber}?text=${message}`;
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
